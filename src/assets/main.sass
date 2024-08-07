@@ -1,0 +1,76 @@
+@import _variables
+  
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+html
+  height: 100vh
+
+body
+  height: 100%
+  font-family: Inter
+.app
+  height: 100%
+img
+  display: block
+  max-width: 100%
+
+button
+  border: none
+  cursor: pointer
+
+.bordered
+  border: 1px solid $border-color
+  border-radius: 12px
+
+.skeleton-block
+  border-radius: 8px
+  background: linear-gradient(90deg, #3C3C3C 0%, #444444 51.04%, #333333 100%)
+  background-size: 200% 200%
+  animation: skeleton-loading 1s linear infinite none
+
+@keyframes skeleton-loading
+  0%
+    background-position:0% 51%
+  50%
+    background-position:100% 50%
+  100%
+    background-position:0% 51%
+
+
+.primary-button
+  padding-block: 11px
+  width: 100%
+  font-size: 14px
+  color: #fff
+  background-color: $primary-red
+  border-radius: 8px
+  &:hover
+    background-color: $primary-hover
+  
+.transition-background
+  transition: background-color .2s ease-in-out
+
+.wrapper
+  height: 100%
+  background-color: #1D1D1D
+  &.light
+    background-color: #fff
+    .banner,
+    .cell,
+    .bottom-block,
+    .item-options
+      background-color: #eee
+    .item__quantity
+      color: #000
+      opacity: 1
+    .cell:hover
+      background-color: #ddd
+    .skeleton-block
+      background: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(214,214,214,1) 47%, rgba(191,191,191,1) 100%)
+      background-size: 200% 200%
+    .close-button__line
+      background-color: #000
+    
