@@ -33,7 +33,7 @@ function deleteItem() {
     <div :class="['item-options', {'opened': itemsStore.optionsOpened}]">
         <CloseButtonVue @click="itemsStore.closeOptions" />
         <div class="item-option__image-wrapper">
-            <img :src="`/images/${itemsStore.currentItem.color}-item.png`" 
+            <img :src="`images/${itemsStore.currentItem.color}-item.png`" 
             :alt="`${itemsStore.currentItem.color}-item`"
             class="item-options__image">
         </div>

@@ -25,7 +25,7 @@ function startDrag(event:any, item: Item) {
     @click="itemsStore.setCurrentItem(item);"
     draggable="true" 
     @dragstart="startDrag($event, item)">
-        <img :src="`/images/${item.color}-item.png`" :alt="`${item.color}-item`">
+        <img :src="`images/${item.color}-item.png`" :alt="`${item.color}-item`">
         <div class="item__quantity">
             {{ item.count }}
         </div>

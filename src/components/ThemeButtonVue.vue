@@ -4,8 +4,8 @@ import { useThemeStore } from '@/stores/theme';
 
 const themeStore = useThemeStore();
 
-const lightIconPath = '/images/theme-light-icon.png';
-const darkIconPath = '/images/theme-dark-icon.png';
+const lightIconPath = 'images/theme-light-icon.png';
+const darkIconPath = 'images/theme-dark-icon.png';
 
 function getIcon() {
     return themeStore.currentTheme == 'light' ? darkIconPath : lightIconPath;
